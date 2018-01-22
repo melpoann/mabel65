@@ -36,8 +36,8 @@
 	require( $proficiency_theme_path . '/icon-functions.php');
 	require_once( get_template_directory() . '/wp-pre-image/demo-priview.php' );
 	require( get_template_directory() . '/proficiency-info/theme-info.php');
-	
-	
+
+
 
 /**
  * Sets up theme defaults and registers support for various WordPress features.
@@ -76,7 +76,7 @@ function proficiency_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => __( 'Primary menu', 'proficiency' ),
-		'social' => __( 'Social Links Menu', 'proficiency' ),
+		'prod' => __( 'Второе меню', 'proficiency' ),
 	) );
 
 	/*

@@ -106,7 +106,7 @@
                       <?php wp_nav_menu( array(
                           'theme_location' => 'primary',
                           'container'  => '',
-                          'menu_class' => 'nav navbar-nav navbar-right',
+                          'menu_class' => 'nav navbar-nav navbar-right navbar-base',
                           'fallback_cb' => 'proficiency_fallback_page_menu',
                           'walker' => new proficiency_nav_walker()
                       ) );
@@ -119,8 +119,19 @@
                           <a href="#">+7(4242)00-00-00</a>
                       </div>
                   </div>
-              </div>
-          </div>
+              </div></div>
+      </div>
+        <div id="navbar-wp-menu" class="second-menu">
+            <?php wp_nav_menu( array(
+                    'theme_location' => 'prod',
+                    'container'  => '',
+                    'menu_class' => 'nav navbar-nav',
+                    'fallback_cb' => 'proficiency_fallback_page_menu',
+                    'walker' => new proficiency_nav_walker()
+            ) );
+            ?>
+        </div>
+
 
 
         <!-- /navbar-toggle --> 
