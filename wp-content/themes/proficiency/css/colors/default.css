@@ -48,9 +48,9 @@
     background-color: #126120;
 }
 /*=== navbar dropdown colors ===*/ 
-.navbar-wp .dropdown-menu {
-	background: #fff;
-}
+/*.navbar-wp .dropdown-menu {*/
+	/*background: #fff;*/
+/*}*/
 .navbar-wp .dropdown-menu > li > a {
 	color: #212121;
 }
@@ -59,7 +59,7 @@
 	color: #212121;
 }
 .navbar-wp .dropdown-menu > li > a:hover {
-	background: #f5f5f5;
+	background: #efe56c;
 }
 .navbar-wp .navbar-nav > .disabled > a, .navbar-wp .navbar-nav > .disabled > a:hover, .navbar-wp .navbar-nav > .disabled > a:focus {
 	color: #ccc;

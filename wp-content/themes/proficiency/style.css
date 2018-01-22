@@ -77,7 +77,57 @@ Text Domain: proficiency
 	padding: 0 15%!important;
 	text-align:center;
 }
+ /*====== Second menu ======*/
+.second-menu {
+	width: 100%;
+	height: 80px;
+	background-color: #126120;
+	font-size: 10px;
+	padding: 0 10%;
+}
 
+.second-menu a {
+	color: #fff!important;
+}
+
+.second-menu ul {
+	width: 100%;
+	height: 100%;
+	top:0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+}
+.second-menu ul li {
+	margin: auto;
+}
+
+.second-menu > li > a:hover,
+.second-menu> li.active > a:hover {
+	color: #efe56c;
+
+}
+
+/*====== Second Submenu ======*/
+
+.second-menu .dropdown-menu {
+	position: absolute;
+	background-color: #126120;
+	top:102%;
+	display: none;
+}
+.second-menu .dropdown-menu li {
+	margin: 0;
+	width:100%;
+}
+.second-menu ul > li:hover > ul {
+	display: block;
+}
+
+
+/*====== MEDIA QUERY ======*/
 
 @media (max-width: 1680px) {
 
@@ -217,7 +267,8 @@ body img {max-width:100%;}
 	font-family: 'Montserrat', sans-serif;
 	text-transform: uppercase;
 }
-.navbar-wp .navbar-nav > li > a::after, .navbar-wp .navbar-nav > li.active > a::after {
+.navbar-wp .navbar-base > li > a::after,
+.navbar-wp .navbar-base> li.active > a::after {
 	bottom: 0;
 	content: "";
 	display: block;
@@ -252,22 +303,26 @@ body img {max-width:100%;}
 	border: none;
 }
 .navbar-wp .dropdown-menu {
-	min-width: 200px;
+	/*min-width: 200px;*/
+	width:auto;
 	padding: 0;
 	border: none;
 	border-radius: 0;
 	z-index: 10;
 	right: auto;
 	left: 0;
+	height:auto;
+	text-align:center;
 }
 .navbar-wp .dropdown-menu > li:last-child {
 	border: 0
 }
 .navbar-wp .dropdown-menu > li > a {
 	padding: 15px;
-	font-size: 12px;
-	font-weight: 500;
+	font-size: 11px;
+	font-weight: 700;
 	letter-spacing: 1px;
+	text-transform: uppercase;
 }
 .navbar-nav > li:last-child > ul::before {
 	right: 20px;

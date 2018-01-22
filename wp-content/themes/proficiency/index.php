@@ -14,6 +14,7 @@ get_header(); ?>
 <?php get_template_part('index','banner'); ?>
 <!--==================== main content section ====================-->
 <main id="content">
+    <?php the_widget( 'WP_Widget_Slider' ); ?>
   <div class="container">
     <div class="row">
       <div class="<?php echo ( !is_active_sidebar( 'sidebar_primary' ) ? '12' :'9' ); ?> col-md-9 col-sm-8">
